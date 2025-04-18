@@ -1,0 +1,13 @@
+airflow.cfg
+airflow.db
+webserver_config.py
+unittests.cfg
+
+# Python cache
+dags/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
+.vscode/
