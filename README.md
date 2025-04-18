@@ -1,6 +1,6 @@
 ## Airflow Fundamentals
 
-This repository contains my work on **Apache Airflow**, where I am building a solid foundation in workflow orchestration and task automation. Having worked with Airflow in a professional setting, I am now focusing on strengthening my understanding of its core concepts, tools, and best practices, which will further enhance my ability to design and optimise data workflows.
+This repository contains my work on **Apache Airflow**, where I am building a solid foundation in workflow orchestration and task automation by following tutorials. Having worked with Airflow in a professional setting, I am now focusing on strengthening my understanding of its core concepts, tools, and best practices, which will further enhance my ability to design and optimise data workflows.
 
 ### Key Highlights:
 - **DAG Design & Development**: Experience in building and maintaining complex DAGs for automating data workflows and task dependencies.
