@@ -1,0 +1,14 @@
+[2025-04-19T17:39:21.437+1000] {processor.py:186} INFO - Started process (PID=57311) to work on /Users/anurag/airflow/dags/simple_hello_world.py
+[2025-04-19T17:39:21.438+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/simple_hello_world.py for tasks to queue
+[2025-04-19T17:39:21.439+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:21.439+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/simple_hello_world.py
+[2025-04-19T17:39:21.450+1000] {processor.py:925} INFO - DAG(s) 'hello_world' retrieved from /Users/anurag/airflow/dags/simple_hello_world.py
+[2025-04-19T17:39:21.692+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:21.692+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:39:21.710+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:21.710+1000] {dag.py:4180} INFO - Setting next_dagrun for hello_world to 2025-04-19 00:00:00+00:00, run_after=2025-04-20 00:00:00+00:00
+[2025-04-19T17:39:21.728+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/simple_hello_world.py took 0.297 seconds
+[2025-04-19T17:39:53.891+1000] {processor.py:186} INFO - Started process (PID=57462) to work on /Users/anurag/airflow/dags/simple_hello_world.py
+[2025-04-19T17:39:53.893+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/simple_hello_world.py for tasks to queue
+[2025-04-19T17:39:53.894+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:53.894+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/simple_hello_world.py
+[2025-04-19T17:39:53.904+1000] {processor.py:925} INFO - DAG(s) 'hello_world' retrieved from /Users/anurag/airflow/dags/simple_hello_world.py
+[2025-04-19T17:39:54.141+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:54.140+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:39:54.156+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:54.156+1000] {dag.py:4180} INFO - Setting next_dagrun for hello_world to 2025-04-19 00:00:00+00:00, run_after=2025-04-20 00:00:00+00:00
+[2025-04-19T17:39:54.174+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/simple_hello_world.py took 0.289 seconds

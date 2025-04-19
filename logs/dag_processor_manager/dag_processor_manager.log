@@ -3542,3 +3542,17 @@ File Path                                             PID    Runtime      # DAGs
 /Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  2.08s           2025-04-18T06:57:29                      34
 /Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.96s           2025-04-18T06:57:32                      34
 ================================================================================
+[2025-04-19T17:39:15.424+1000] {manager.py:483} INFO - Processing files using up to 1 processes at a time 
+[2025-04-19T17:39:15.424+1000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-04-19T17:39:15.425+1000] {manager.py:485} INFO - Checking for new files in /Users/anurag/airflow/dags every 300 seconds
+[2025-04-19T17:39:15.425+1000] {manager.py:821} INFO - Searching for files in /Users/anurag/airflow/dags
+[2025-04-19T17:39:15.434+1000] {manager.py:824} INFO - There are 2 files in /Users/anurag/airflow/dags
+[2025-04-19T17:39:43.869+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  2.04s           2025-04-19T07:39:17                      34
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.85s           2025-04-19T07:39:21                      34
+================================================================================
