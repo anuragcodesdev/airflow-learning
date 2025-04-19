@@ -1,69 +1,53 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 import pendulum
+import os
 
+# Get directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Point to 'bash_scripts' folder inside the same directory
+template_searchpath = os.path.join(script_dir, 'bash_scripts')
+
+# Default arguments for the DAG
 default_args = {
-    'owner' : 'anuragthakur'
+    'owner': 'anuragthakur',
+    'retries': 1,
+    'retry_delay': timedelta(minutes=2),
 }
 
+# Define the DAG
 with DAG(
-    dag_id = 'executing_multiple_tasks',
-    description = 'DAG with multiple tasks and dependencies.',
-    default_args = default_args,
-    start_date = pendulum.now("UTC").subtract(days=1),
-    schedule_interval = '@once',
-    tags = ['beginner', 'bash', 'hello world']
+    dag_id='executing_multiple_tasks',
+    description='DAG with multiple tasks and dependencies.',
+    default_args=default_args,
+    start_date=pendulum.now("UTC").subtract(days=1),
+    schedule_interval='@once',
+    tags=['beginner', 'bash', 'hello world'],
+    template_searchpath=template_searchpath
 ) as dag:
-    
-#     taskA = BashOperator(
-#         task_id = 'taskA',
-#         bash_command = 'Echo TASK A has executed!'
-#     )
-    
-#     taskB = BashOperator(
-#         task_id = 'taskB',
-#         bash_command = 'echo TASK B has executed'
-#     )
-    
-# Working with up and down stream made easier.
+
     taskA = BashOperator(
-        task_id = 'taskA',
-        bash_command = '''
-        echo TASK A has started!
-        
-        for i in {1...10}
-        do
-            echo TASK A printing $i
-        done
-        
-        echo TASK A ended!
-    '''
+        task_id='taskA',
+        bash_command='taskA.sh'
     )
-    
+
     taskB = BashOperator(
-        task_id = 'taskB',
-        bash_command = '''
-        echo TASK B has started!
-        sleep 4
-        echo TASK B has ended!
-    '''
+        task_id='taskB',
+        bash_command='taskB.sh'
     )
-    
+
     taskC = BashOperator(
-        task_id = 'taskC',
-        bash_command =  '''
-        echo TASK C has started!
-        sleep 15
-        echo TASK C has ended!
-    '''
+        task_id='taskC',
+        bash_command='taskC.sh'
     )
 
     taskD = BashOperator(
-        task_id = 'taskD',
-        bash_command = 'echo TASK D completed!'
+        task_id='taskD',
+        bash_command='taskD.sh'
     )
-    
 
-taskA >> [taskB, taskC] #taskB and taskC depend on taskA
-taskD << [taskB, taskC] #taskB and taskC depend on task D
+    # Set task dependencies
+    taskA >> [taskB, taskC]  # taskB and taskC depend on taskA
+    [taskB, taskC] >> taskD  # taskD depends on taskB and taskC
