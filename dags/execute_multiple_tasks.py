@@ -47,7 +47,13 @@ with DAG(
         task_id='taskD',
         bash_command='taskD.sh'
     )
+    
+    taskE = BashOperator(
+        task_id='taskE',
+        bash_command='taskE.sh'
+    )
 
     # Set task dependencies
     taskA >> [taskB, taskC]  # taskB and taskC depend on taskA
     [taskB, taskC] >> taskD  # taskD depends on taskB and taskC
+    taskD >> taskE
