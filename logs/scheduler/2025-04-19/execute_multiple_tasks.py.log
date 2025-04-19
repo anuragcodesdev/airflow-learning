@@ -12,3 +12,38 @@
 [2025-04-19T17:39:50.111+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:50.111+1000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-19T17:39:50.127+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:39:50.127+1000] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_tasks to None, run_after=None
 [2025-04-19T17:39:50.148+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/execute_multiple_tasks.py took 0.304 seconds
+[2025-04-19T17:40:22.806+1000] {processor.py:186} INFO - Started process (PID=57602) to work on /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:40:22.807+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/execute_multiple_tasks.py for tasks to queue
+[2025-04-19T17:40:22.808+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:40:22.808+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:40:22.820+1000] {processor.py:925} INFO - DAG(s) 'executing_multiple_tasks' retrieved from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:40:23.060+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:40:23.060+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:40:23.076+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:40:23.076+1000] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_tasks to None, run_after=None
+[2025-04-19T17:40:23.095+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/execute_multiple_tasks.py took 0.295 seconds
+[2025-04-19T17:40:54.971+1000] {processor.py:186} INFO - Started process (PID=57727) to work on /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:40:54.972+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/execute_multiple_tasks.py for tasks to queue
+[2025-04-19T17:40:54.973+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:40:54.973+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:40:54.983+1000] {processor.py:925} INFO - DAG(s) 'executing_multiple_tasks' retrieved from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:40:55.215+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:40:55.215+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:40:55.230+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:40:55.230+1000] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_tasks to None, run_after=None
+[2025-04-19T17:40:55.248+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/execute_multiple_tasks.py took 0.282 seconds
+[2025-04-19T17:41:27.223+1000] {processor.py:186} INFO - Started process (PID=57815) to work on /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:41:27.224+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/execute_multiple_tasks.py for tasks to queue
+[2025-04-19T17:41:27.225+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:41:27.225+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:41:27.236+1000] {processor.py:925} INFO - DAG(s) 'executing_multiple_tasks' retrieved from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:41:27.474+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:41:27.474+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:41:27.494+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:41:27.494+1000] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_tasks to None, run_after=None
+[2025-04-19T17:41:27.515+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/execute_multiple_tasks.py took 0.297 seconds
+[2025-04-19T17:41:59.676+1000] {processor.py:186} INFO - Started process (PID=57954) to work on /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:41:59.691+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/execute_multiple_tasks.py for tasks to queue
+[2025-04-19T17:41:59.694+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:41:59.693+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:41:59.735+1000] {processor.py:925} INFO - DAG(s) 'executing_multiple_tasks' retrieved from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:42:00.046+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:42:00.045+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:42:00.072+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:42:00.072+1000] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_tasks to None, run_after=None
+[2025-04-19T17:42:00.098+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/execute_multiple_tasks.py took 0.428 seconds
+[2025-04-19T17:42:32.139+1000] {processor.py:186} INFO - Started process (PID=58042) to work on /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:42:32.140+1000] {processor.py:914} INFO - Processing file /Users/anurag/airflow/dags/execute_multiple_tasks.py for tasks to queue
+[2025-04-19T17:42:32.141+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:42:32.141+1000] {dagbag.py:588} INFO - Filling up the DagBag from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:42:32.151+1000] {processor.py:925} INFO - DAG(s) 'executing_multiple_tasks' retrieved from /Users/anurag/airflow/dags/execute_multiple_tasks.py
+[2025-04-19T17:42:32.395+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:42:32.395+1000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-19T17:42:32.410+1000] {logging_mixin.py:190} INFO - [2025-04-19T17:42:32.409+1000] {dag.py:4180} INFO - Setting next_dagrun for executing_multiple_tasks to None, run_after=None
+[2025-04-19T17:42:32.430+1000] {processor.py:208} INFO - Processing /Users/anurag/airflow/dags/execute_multiple_tasks.py took 0.297 seconds

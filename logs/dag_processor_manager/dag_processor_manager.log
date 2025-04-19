@@ -3556,3 +3556,57 @@ File Path                                             PID    Runtime      # DAGs
 /Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  2.04s           2025-04-19T07:39:17                      34
 /Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.85s           2025-04-19T07:39:21                      34
 ================================================================================
+[2025-04-19T17:40:13.965+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.98s           2025-04-19T07:39:54                      34
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  1.95s           2025-04-19T07:39:50                      34
+================================================================================
+[2025-04-19T17:40:44.061+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  2.57s           2025-04-19T07:40:23                      34
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.91s           2025-04-19T07:40:26                      34
+================================================================================
+[2025-04-19T17:41:14.161+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  1.84s           2025-04-19T07:40:55                      34
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.78s           2025-04-19T07:40:58                      34
+================================================================================
+[2025-04-19T17:41:45.116+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  2.05s           2025-04-19T07:41:27                      34
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  1.95s           2025-04-19T07:41:30                      34
+================================================================================
+[2025-04-19T17:42:15.537+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  2.21s           2025-04-19T07:42:00                      34
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  2.01s           2025-04-19T07:42:02                      34
+================================================================================
+[2025-04-19T17:42:46.245+1000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                             PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+----------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/Users/anurag/airflow/dags/simple_hello_world.py                               1           0  4.28s           2025-04-19T07:42:38                      34
+/Users/anurag/airflow/dags/execute_multiple_tasks.py                           1           0  1.98s           2025-04-19T07:42:32                      34
+================================================================================

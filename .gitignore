@@ -11,3 +11,6 @@ dags/__pycache__/
 
 # IDE
 .vscode/
+
+# Logs
+/logs/
