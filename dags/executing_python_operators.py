@@ -2,7 +2,7 @@ import pendulum
 
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.bash import PythonOperator
+from airflow.operators.python import PythonOperator
 
 default_args = {
     'owner':'anuragthakur'
@@ -14,11 +14,12 @@ def print_function():
 with DAG(
     dag_id = 'execute_python_operators',
     description = 'Python operators in DAGs',
-    default_args = default_arg,
+    default_args = default_args,
     start_date = pendulum.now("UTC").subtract(days=1),
     schedule_interval = '@daily',
     tags = ['simple', 'python']
 ) as dag:
     task = PythonOperator(
-        task_id = 'python_task'
+        task_id = 'python_task',
+        python_callable=print_function, 
     )

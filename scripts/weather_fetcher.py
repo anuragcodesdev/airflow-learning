@@ -26,7 +26,7 @@ class WeatherAPI:
             :raises  EnvironmentError: If WEATHER_API_KEY is not set in environment 
             variables.
         """
-        self.api_key = ''
+        self.api_key = self._load_weather_api_key()
         self.city = city
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
         
@@ -36,6 +36,15 @@ class WeatherAPI:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
     
+    def _load_weather_api_key(self):
+        """Load the WEATHER_API_KEY from the env.yaml file."""
+        try:
+            with open(os.path.join(os.path.dirname(__file__), 'env.yaml'), 'r') as file:
+                config = yaml.safe_load(file)
+                return config.get('environment_variables', {}).get('WEATHER_API_KEY', None)
+        except Exception as e:
+            self.logger.error(f"Error loading API key from env.yaml: {e}")
+            return None
     
     def fetch_weather(self):
         """
@@ -51,11 +60,13 @@ class WeatherAPI:
         }
         
         try:
+            self.logger.debug(f"Fetching weather data for city: {self.city}")
             response = requests.get(self.base_url, params=params, timeout=10)
             response.raise_for_status() 
 
             data = response.json()
             if response.status_code != 200:
+                self.logger.error(f"Failed response from OpenWeatherMap: {data.get('message', 'Unknown error')}")
                 return {"error": data.get("message", "Failed to retrieve weather data")}
 
             main = data.get("main", {})
@@ -66,10 +77,12 @@ class WeatherAPI:
                 "pressure": main.get("pressure"),
                 "description": data.get("weather", [{}])[0].get("description")
             }
-
+            self.logger.info(f"Weather data for {self.city}: {weather}")
             return weather
 
         except requests.RequestException as e:
+            self.logger.error(f"Request failed: {e}")
             return {"error": "Failed to retrieve weather data due to network issues"}
         except Exception as e:
+            self.logger.error(f"Unexpected error occurred: {e}")
             return {"error": "Unexpected error occurred"}
