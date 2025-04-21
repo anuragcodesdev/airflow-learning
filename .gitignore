@@ -2,6 +2,7 @@ airflow.cfg
 airflow.db
 webserver_config.py
 unittests.cfg
+airflow-webserver.pid
 
 # Python cache
 dags/__pycache__/
