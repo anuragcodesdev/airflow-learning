@@ -5,6 +5,7 @@ import os
 
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.models import Variable
 
 # Add the parent directory to the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -23,7 +24,8 @@ default_args = {
 # Python function to fetch weather data using the WeatherAPI class
 def get_weather_data():
     try:
-        api = WeatherAPI()
+        api_key = Variable.get("open_weather_api_key")
+        api = WeatherAPI(api_key=api_key)
         weather = api.fetch_weather()
         
         if 'error' in weather:

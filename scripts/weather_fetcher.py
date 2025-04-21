@@ -15,7 +15,7 @@ class WeatherAPI:
         :base_url (str): Base URL for OpenWeatherMap API.
     """
     
-    def __init__(self, city: str = 'Melbourne') -> None:
+    def __init__(self, api_key = '', city: str = 'Melbourne') -> None:
         """
         Initialise the WeatherAPI instance.
         
@@ -26,7 +26,8 @@ class WeatherAPI:
             :raises  EnvironmentError: If WEATHER_API_KEY is not set in environment 
             variables.
         """
-        self.api_key = self._load_weather_api_key()
+        # self.api_key = self._load_weather_api_key()
+        self.api_key = api_key
         self.city = city
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
         
